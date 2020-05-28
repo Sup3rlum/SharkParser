@@ -7,10 +7,11 @@
     <Authors>Toma Kolev</Authors>
     <Description>A flexible .NET parser inteded for mathematical applications</Description>
     <Copyright>GPL v3</Copyright>
-    <PackageTags>math, parser, managed, expressions, science, language</PackageTags>
+    <PackageTags>math, parser, expressions</PackageTags>
     <Version>1.0.1.0-alpha</Version>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
     <FileVersion>1.0.1.0</FileVersion>
+    <PackageProjectUrl>https://github.com/Sup3rlum/SharkParser</PackageProjectUrl>
   </PropertyGroup>
 
 </Project>
