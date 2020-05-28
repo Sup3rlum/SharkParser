@@ -8,6 +8,9 @@
     <Description>A flexible .NET parser inteded for mathematical applications</Description>
     <Copyright>GPL v3</Copyright>
     <PackageTags>math, parser, managed, expressions, science, language</PackageTags>
+    <Version>1.0.1.0-alpha</Version>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
   </PropertyGroup>
 
 </Project>
