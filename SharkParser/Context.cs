@@ -7,7 +7,7 @@ namespace SharkParser
     public class Context
     {
 
-        private Dictionary<string, ExpressionElement> definitions;
+        public Dictionary<string, ExpressionElement> definitions;
 
         static Context()
         {
