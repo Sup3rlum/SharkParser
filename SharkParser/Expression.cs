@@ -19,14 +19,13 @@ namespace SharkParser
         public double Evaluate()
         {
 
+            Context d = new Context();
+            d.AddDefaults();
 
-
-            return exprInternal.Evaluate(ref Context.DefaultContext);
+            return exprInternal.Evaluate(ref d);
         }
         public double Evaluate(Context context)
         {
-
-            context.AddContext(ref Context.DefaultContext);
 
             return exprInternal.Evaluate(ref context);
         }

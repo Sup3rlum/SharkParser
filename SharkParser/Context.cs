@@ -9,16 +9,11 @@ namespace SharkParser
 
         public Dictionary<string, ExpressionElement> definitions;
 
-        static Context()
-        {
-            DefaultContext = new Context();
-
-            DefaultContext.AddDefinition("pi=3.1415926535");
-        }
 
         public Context()
         {
             definitions = new Dictionary<string, ExpressionElement>();
+
         }
         public void AddDefinition(string s)
         {
@@ -57,7 +52,10 @@ namespace SharkParser
             definitions.Add(lhs[0].Value, Parser.ParseExpression(rhs));
 
         }
-
+        public void AddDefaults()
+        {
+            this.AddDefinition("pi=3.1415926535");
+        }
         public void AddContext(ref Context c)
         {
             foreach (KeyValuePair<string, ExpressionElement> f in c.definitions)
@@ -65,7 +63,5 @@ namespace SharkParser
                 definitions.Add(f.Key, f.Value);
             }
         }
-
-        public static Context DefaultContext;
     }
 }
